@@ -35,17 +35,10 @@ public class Inteldict implements EntryPoint {
 
         });
 
-        button.show();
-
-        HLayout memberLayout = new HLayout(10);
-        memberLayout.setStyleName("ribbonGroupBody");
-        memberLayout.setAutoWidth();
-        memberLayout.setHeight100();
-
         HTMLFlow flow = new HTMLFlow();
-        flow.setStyleName("ribbonGroupTitle");
+
         flow.setLayoutAlign(Alignment.CENTER);
-        flow.setContents("<style type='text/css'>\n" +
+        flow.setContents("<br/><br/><br/><br/><br/><br/><style type='text/css'>\n" +
                 "\n" +
                 ".chart {\n" +
                 "  background: #fff;\n" +
@@ -135,7 +128,9 @@ public class Inteldict implements EntryPoint {
                 "        .style(\"stroke-opacity\", 1);\n" +
                 "  });\n" +
                 "})();\n" +
-                "</script>\n");
+                "</script><br/><br/><br/><br/><br/><br/>\n");
         flow.show();
+
+        button.show();
     }
 }

@@ -1,35 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfb4ab49-7499-416e-b9a0-b5bae2a7b438" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gwt_user.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/smartgwt.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/smartgwt_skins.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smartgwt.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/inteldict/client/InteldictService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/inteldict/client/InteldictServiceAsync.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/inteldict/inteldict.gwt.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/inteldict/server/InteldictServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/war/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/war/circles.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/war/d3.v2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/war/inteldict.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/war/inteldict.html" />
+    <list default="true" id="dfb4ab49-7499-416e-b9a0-b5bae2a7b438" name="Default" comment="" />
+    <list id="0cf18221-2d0d-4c02-a6ed-823078ddc430" name="Rejected commit: Default" comment="add br tags">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java" afterPath="$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java" />
     </list>
     <ignored path="smartgwt.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="dfb4ab49-7499-416e-b9a0-b5bae2a7b438" time="1339740791663" ignored="false" />
+    <file path="$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java" changelist="dfb4ab49-7499-416e-b9a0-b5bae2a7b438" time="1339740722037" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Inteldict.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Inteldict.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="41" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0">
+            <state line="106" column="39" selection-start="3873" selection-end="3873" vertical-scroll-proportion="0.55793226">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#763#937#0" expanded="true" />
@@ -142,10 +122,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inteldict.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="inteldict.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/war/inteldict.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="25" selection-start="825" selection-end="825" vertical-scroll-proportion="0.49723756">
+            <state line="12" column="12" selection-start="737" selection-end="737" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
@@ -172,8 +152,8 @@
         <option value="$PROJECT_DIR$/src/org/inteldict/client/InteldictServiceAsync.java" />
         <option value="$PROJECT_DIR$/war/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/../js/circles-static/circles.html" />
-        <option value="$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java" />
         <option value="$PROJECT_DIR$/war/inteldict.html" />
+        <option value="$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java" />
       </list>
     </option>
   </component>
@@ -572,9 +552,15 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="dfb4ab49-7499-416e-b9a0-b5bae2a7b438" name="Default" comment="" />
+      <changelist id="0cf18221-2d0d-4c02-a6ed-823078ddc430" name="Rejected commit: Default" comment="add br tags" />
       <created>1339692597206</created>
       <updated>1339692597206</updated>
     </task>
+    <task id="LOCAL-00001" summary="add br tags">
+      <created>1339740787210</created>
+      <updated>1339740787210</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -590,17 +576,17 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24968395" sideWeight="0.47345132" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24968395" sideWeight="0.36946902" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24968395" sideWeight="0.21902655" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24968395" sideWeight="0.670354" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32300884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24968395" sideWeight="0.19579646" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32300884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -644,7 +630,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="add br tags" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -657,6 +643,7 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="add br tags" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -705,17 +692,6 @@
         <state line="7" column="17" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="41" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#763#937#0" expanded="true" />
-            <element signature="e#925#926#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../js/circles-static/circles.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="82" selection-start="275" selection-end="275" vertical-scroll-proportion="-0.625">
@@ -725,8 +701,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/war/inteldict.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="25" selection-start="825" selection-end="825" vertical-scroll-proportion="0.49723756">
+        <state line="12" column="12" selection-start="737" selection-end="737" vertical-scroll-proportion="-7.5">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="39" selection-start="3873" selection-end="3873" vertical-scroll-proportion="0.55793226">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#763#937#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
