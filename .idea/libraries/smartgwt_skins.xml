@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="smartgwt-skins">
+    <CLASSES>
+      <root url="jar:///opt/smartgwt-3.0p/smartgwt-skins.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
