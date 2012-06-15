@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfb4ab49-7499-416e-b9a0-b5bae2a7b438" name="Default" comment="" />
-    <list id="0cf18221-2d0d-4c02-a6ed-823078ddc430" name="Rejected commit: Default" comment="add br tags">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="dfb4ab49-7499-416e-b9a0-b5bae2a7b438" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java" afterPath="$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/inteldict.html" afterPath="$PROJECT_DIR$/war/inteldict.html" />
     </list>
+    <list id="0cf18221-2d0d-4c02-a6ed-823078ddc430" name="Rejected commit: Default" comment="add br tags" />
     <ignored path="smartgwt.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="dfb4ab49-7499-416e-b9a0-b5bae2a7b438" time="1339740791663" ignored="false" />
-    <file path="$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java" changelist="dfb4ab49-7499-416e-b9a0-b5bae2a7b438" time="1339740722037" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <file leaf-file-name="Inteldict.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="39" selection-start="3873" selection-end="3873" vertical-scroll-proportion="0.55793226">
+            <state line="63" column="22" selection-start="1921" selection-end="1921" vertical-scroll-proportion="0.027303753">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#763#937#0" expanded="true" />
@@ -125,7 +123,7 @@
       <file leaf-file-name="inteldict.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/war/inteldict.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="12" selection-start="737" selection-end="737" vertical-scroll-proportion="-7.5">
+            <state line="2" column="141" selection-start="85" selection-end="85" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -152,8 +150,8 @@
         <option value="$PROJECT_DIR$/src/org/inteldict/client/InteldictServiceAsync.java" />
         <option value="$PROJECT_DIR$/war/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/../js/circles-static/circles.html" />
-        <option value="$PROJECT_DIR$/war/inteldict.html" />
         <option value="$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java" />
+        <option value="$PROJECT_DIR$/war/inteldict.html" />
       </list>
     </option>
   </component>
@@ -699,16 +697,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-transitional.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="902" column="6" selection-start="26299" selection-end="26299" vertical-scroll-proportion="0.33274338">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/war/inteldict.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="12" selection-start="737" selection-end="737" vertical-scroll-proportion="-7.5">
+        <state line="2" column="141" selection-start="85" selection-end="85" vertical-scroll-proportion="-1.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="39" selection-start="3873" selection-end="3873" vertical-scroll-proportion="0.55793226">
+        <state line="63" column="22" selection-start="1921" selection-end="1921" vertical-scroll-proportion="0.027303753">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#763#937#0" expanded="true" />

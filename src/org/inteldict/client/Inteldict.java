@@ -38,97 +38,86 @@ public class Inteldict implements EntryPoint {
         HTMLFlow flow = new HTMLFlow();
 
         flow.setLayoutAlign(Alignment.CENTER);
-        flow.setContents("<br/><br/><br/><br/><br/><br/><style type='text/css'>\n" +
+        flow.setContents("<!DOCTYPE html>\n" +
+                "<meta charset=\"utf-8\">\n" +
+                "<title>Cubism.js</title>\n" +
+                "<style>\n" +
+                "    #example1 {\n" +
+                "        min-height: 155px;\n" +
+                "    }\n" +
                 "\n" +
-                ".chart {\n" +
-                "  background: #fff;\n" +
-                "  border: solid 1px #ddd;\n" +
-                "  box-shadow: 0 0 4px rgba(0,0,0,.2);\n" +
-                "  font: 10px sans-serif;\n" +
-                "  height: 180px;\n" +
-                "  position: relative;\n" +
-                "  width: 720px;\n" +
-                "}\n" +
+                "    #example2a {\n" +
+                "        min-height: 153px;\n" +
+                "    }\n" +
                 "\n" +
-                ".chart svg {\n" +
-                "  border-left: solid 2px #ddd;\n" +
-                "  left: 360px;\n" +
-                "  position: absolute;\n" +
-                "  top: 0;\n" +
-                "}\n" +
+                "    #example2b {\n" +
+                "        min-height: 255px;\n" +
+                "    }\n" +
                 "\n" +
-                ".chart pre {\n" +
-                "  font: 12px monospace;\n" +
-                "  height: 60px;\n" +
-                "  left: 10px;\n" +
-                "  position: absolute;\n" +
-                "  top: 0;\n" +
-                "  width: 340px;\n" +
-                "}\n" +
+                "</style>\n" +
+                "<div id=\"body\">\n" +
                 "\n" +
-                ".chart circle.little {\n" +
-                "  fill: #aaa;\n" +
-                "  stroke: #666;\n" +
-                "  stroke-width: 1.5px;\n" +
-                "}\n" +
+                "    <h1>Cubism.js</h1>\n" +
+                "    <h2>Time Series Visualization</h2>\n" +
+                "    <div id=\"example1\"></div>\n" +
+                "</div>\n" +
                 "\n" +
-                ".chart button {\n" +
-                "  left: 275px;\n" +
-                "  position: absolute;\n" +
-                "  top: 145px;\n" +
-                "  width: 80px;\n" +
-                "}\n" +
+                "<script>\n" +
                 "\n" +
-                ".chart .data rect {\n" +
-                "  fill: #eee;\n" +
-                "  stroke: #ccc;\n" +
-                "}\n" +
-                "</style><script type='text/javascript'>\n" +
-                "    var data = [32, 57, 112],\n" +
-                "            dataEnter = data.concat(293),\n" +
-                "            dataExit = data.slice(0, 2),\n" +
-                "            w = 360,\n" +
-                "            h = 180,\n" +
-                "            x = d3.scale.ordinal().domain([57, 32, 112]).rangePoints([0, w], 1),\n" +
-                "            y = d3.scale.ordinal().domain(data).rangePoints([0, h], 2);\n" +
+                "    function random(name) {\n" +
+                "        var value = 0,\n" +
+                "                values = [],\n" +
+                "                i = 0,\n" +
+                "                last;\n" +
+                "        return context.metric(function (start, stop, step, callback) {\n" +
+                "            start = +start, stop = +stop;\n" +
+                "            if (isNaN(last)) last = start;\n" +
+                "            while (last < stop) {\n" +
+                "                last += step;\n" +
+                "                value = Math.max(-10, Math.min(10, value + .8 * Math.random() - .4 + .2 * Math.cos(i += .2)));\n" +
+                "                values.push(value);\n" +
+                "            }\n" +
+                "            callback(null, values = values.slice((start - stop) / step));\n" +
+                "        }, name);\n" +
+                "    }\n" +
+                "\n" +
                 "</script>\n" +
-                "<div class='chart' id='chart-2'>\n" +
-                "<button>Run</button>\n" +
-                "</div><script type='text/javascript'>\n" +
-                "(function() {\n" +
-                "  var svg = d3.select(\"#chart-2\").append(\"svg\")\n" +
-                "      .attr(\"width\", w)\n" +
-                "      .attr(\"height\", h);\n" +
+                "<script>\n" +
                 "\n" +
-                "  svg.selectAll(\".little\")\n" +
-                "      .data(data)\n" +
-                "    .enter().append(\"circle\")\n" +
-                "      .attr(\"class\", \"little\")\n" +
-                "      .attr(\"cx\", x)\n" +
-                "      .attr(\"cy\", y)\n" +
-                "      .attr(\"r\", 12);\n" +
+                "    var context = cubism.context()\n" +
+                "            .serverDelay(0)\n" +
+                "            .clientDelay(0)\n" +
+                "            .step(1e3)\n" +
+                "            .size(960);\n" +
                 "\n" +
-                "  d3.select(\"#chart-2 button\").on(\"click\", function() {\n" +
-                "    svg.selectAll(\".select\").remove();\n" +
+                "    var foo = random(\"foo\"),\n" +
+                "            bar = random(\"bar\");\n" +
                 "\n" +
-                "    svg.selectAll(\".select\")\n" +
-                "        .data(data)\n" +
-                "      .enter().append(\"circle\")\n" +
-                "        .attr(\"class\", \"select\")\n" +
-                "        .attr(\"cx\", x)\n" +
-                "        .attr(\"cy\", y)\n" +
-                "        .attr(\"r\", 60)\n" +
-                "        .style(\"fill\", \"none\")\n" +
-                "        .style(\"stroke\", \"red\")\n" +
-                "        .style(\"stroke-opacity\", 1e-6)\n" +
-                "        .style(\"stroke-width\", 3)\n" +
-                "      .transition()\n" +
-                "        .duration(750)\n" +
-                "        .attr(\"r\", 12)\n" +
-                "        .style(\"stroke-opacity\", 1);\n" +
-                "  });\n" +
-                "})();\n" +
-                "</script><br/><br/><br/><br/><br/><br/>\n");
+                "    d3.select(\"#example1\").call(function (div) {\n" +
+                "\n" +
+                "        div.append(\"div\")\n" +
+                "                .attr(\"class\", \"axis\")\n" +
+                "                .call(context.axis().orient(\"top\"));\n" +
+                "\n" +
+                "        div.selectAll(\".horizon\")\n" +
+                "        div.selectAll(\".horizon\")\n" +
+                "                .data([foo, bar, foo.add(bar), foo.subtract(bar)])\n" +
+                "                .enter().append(\"div\")\n" +
+                "                .attr(\"class\", \"horizon\")\n" +
+                "                .call(context.horizon().extent([-20, 20]));\n" +
+                "\n" +
+                "        div.append(\"div\")\n" +
+                "                .attr(\"class\", \"rule\")\n" +
+                "                .call(context.rule());\n" +
+                "\n" +
+                "    });\n" +
+                "\n" +
+                "    // On mousemove, reposition the chart values to match the rule.\n" +
+                "    context.on(\"focus\", function (i) {\n" +
+                "        d3.selectAll(\".value\").style(\"right\", i == null ? null : context.size() - i + \"px\");\n" +
+                "    });\n" +
+                "\n" +
+                "</script>");
         flow.show();
 
         button.show();
