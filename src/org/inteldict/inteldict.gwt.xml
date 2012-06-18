@@ -5,8 +5,8 @@
     <!-- Inherit the core Web Toolkit stuff.                  -->
     <inherits name='com.google.gwt.user.User'/>
     <inherits name='com.smartgwt.SmartGwt'/>
+    <inherits name="com.smartgwt.SmartGwtPluginBridges" />
+    <script src="../d3.v2.js"></script>
     <!-- Specify the app entry point class.                   -->
     <entry-point class='org.inteldict.client.Inteldict'/>
-
-
 </module>
