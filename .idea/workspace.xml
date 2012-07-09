@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfb4ab49-7499-416e-b9a0-b5bae2a7b438" name="Default" comment="add br tags">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/client/CubismCanvas.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/client/CustomCanvas.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/client/Inteldict$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/client/Inteldict.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/client/InteldictService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/client/InteldictServiceAsync.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/client/Showcase$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/client/Showcase$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/client/Showcase$3$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/client/Showcase$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/client/Showcase$PortalColumn.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/client/Showcase$PortalLayout.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/client/Showcase$Portlet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/client/Showcase.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/server/InteldictServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/inteldict/client/CubismCanvas.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/inteldict/client/Showcase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/war/cubism.v1.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java" afterPath="$PROJECT_DIR$/src/org/inteldict/client/CustomCanvas.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/inteldict.gwt.xml" afterPath="$PROJECT_DIR$/out/production/smartgwt/org/inteldict/inteldict.gwt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java" afterPath="$PROJECT_DIR$/src/org/inteldict/client/Inteldict.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/inteldict/inteldict.gwt.xml" afterPath="$PROJECT_DIR$/src/org/inteldict/inteldict.gwt.xml" />
-    </list>
+    <list default="true" id="dfb4ab49-7499-416e-b9a0-b5bae2a7b438" name="Default" comment="add br tags" />
     <list id="0cf18221-2d0d-4c02-a6ed-823078ddc430" name="Rejected commit: Default" comment="add br tags" />
     <ignored path="smartgwt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -126,7 +102,7 @@
       <file leaf-file-name="CubismCanvas.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/inteldict/client/CubismCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="14" selection-start="2911" selection-end="2911" vertical-scroll-proportion="2.25">
+            <state line="68" column="41" selection-start="2560" selection-end="2560" vertical-scroll-proportion="0.40384614">
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1341860358000" expanded="true" signature="1146:2918" placeholder="{...}" />
@@ -586,7 +562,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="24" width="1630" height="1026" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974684" sideWeight="0.67085713" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -606,7 +582,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24968395" sideWeight="0.21902655" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14177215" sideWeight="0.67085713" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.67085713" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20625798" sideWeight="0.578341" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20625798" sideWeight="0.578341" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32718894" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -780,7 +756,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/inteldict/client/CubismCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="14" selection-start="2911" selection-end="2911" vertical-scroll-proportion="2.25">
+        <state line="68" column="41" selection-start="2560" selection-end="2560" vertical-scroll-proportion="0.40384614">
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1341860358000" expanded="true" signature="1146:2918" placeholder="{...}" />
