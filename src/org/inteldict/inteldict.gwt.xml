@@ -6,7 +6,13 @@
     <inherits name='com.google.gwt.user.User'/>
     <inherits name='com.smartgwt.SmartGwt'/>
     <inherits name="com.smartgwt.SmartGwtPluginBridges" />
-    <script src="../d3.v2.js"></script>
+    <inherits name="com.smartgwt.tools.SmartGwtTools" />
+
+    <!--<script src="../d3.v2.js"></script>-->
+    <!--<script src="../cubism.v1.js"></script>-->
+    <script src="http://square.github.com/cubism/d3.v2.js"></script>
+    <script src="http://square.github.com/cubism/cubism.v1.js"></script>
+    <script src="http://square.github.com/cubism/highlight.min.js"></script>
     <!-- Specify the app entry point class.                   -->
     <entry-point class='org.inteldict.client.Inteldict'/>
 </module>
