@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.rhq.graph</groupId>
+    <artifactId>rhq-graph</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>SmartGWT WAR</name>
+
+    <properties>
+        <!-- Explictly specify a default encoding to avoid relying on the OS locale. -->
+        <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
+
+        <gwt.version>2.4.0</gwt.version>
+        <gwt.maven.plugin.version>2.4.0</gwt.maven.plugin.version>
+        <smartgwt.version>3.0</smartgwt.version>
+
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+
+        <!-- GWT dependencies (from central repo) -->
+        <dependency>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-servlet</artifactId>
+            <version>${gwt.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-user</artifactId>
+            <version>${gwt.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- SmartGWT dependencies (from SmartGWT repo) -->
+        <dependency>
+            <groupId>com.smartgwt</groupId>
+            <artifactId>smartgwt</artifactId>
+            <version>${smartgwt.version}</version>
+        </dependency>
+
+        <!-- test -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.2</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <!-- This will produce a war file named rhq-graph.war, rather than
+             rhq-graph-${project.version}.war. -->
+        <finalName>rhq-graph</finalName>
+
+        <!-- Make sure lasses output dir matches hosted webapp WEB-INF/classes 
+             folder, so GWT Hosted browser can see the classes. -->
+        <outputDirectory>target/hostedWar/WEB-INF/classes</outputDirectory>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>gwt-maven-plugin</artifactId>
+                <version>${gwt.maven.plugin.version}</version>
+
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>generateAsync</goal>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <configuration>
+                    <hostedWebapp>target/hostedWar</hostedWebapp>
+                    <runTarget>org.rhq.graph.Application/Application.html</runTarget>
+
+                    <draftCompile>true</draftCompile>
+                    <debugSuspend>false</debugSuspend>
+
+                    <!--<runTarget>'http://localhost:7080/gwtApplication/org.example.Application/Application.html'</runTarget>-->
+                    <!--<noServer>true</noServer>-->
+                    <!--<inplace>false</inplace>-->
+                </configuration>
+
+            </plugin>
+            <!--
+                If you want to use the target/web.xml file mergewebxml produces,
+                tell the war plugin to use it.
+                Also, exclude what you want from the final artifact here.
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webXml>target/web.xml</webXml>
+                    <warSourceExcludes>.gwt-tmp/**</warSourceExcludes>
+                </configuration>
+            </plugin>
+            -->
+
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <repositories>
+
+            <repository>
+               <id>smartgwt-releases</id>
+               <name>SmartGWT Repository</name>
+               <url>http://www.smartclient.com/maven2/</url>
+               <releases>
+                 <enabled>true</enabled>
+                 <updatePolicy>never</updatePolicy>
+               </releases>
+               <snapshots>
+                 <enabled>false</enabled>
+               </snapshots>
+            </repository>
+
+    </repositories>
+
+</project>
+
