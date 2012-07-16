@@ -30,7 +30,7 @@ public class Application implements EntryPoint {
         vStack.addMember(cubismCanvas);
 
         vStack.draw();
-        cubismCanvas.drawCharts();
+        cubismCanvas.drawCharts(0,0,1000,450);
     }
 }
 

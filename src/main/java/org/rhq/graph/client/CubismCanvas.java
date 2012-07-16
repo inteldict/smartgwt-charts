@@ -8,30 +8,33 @@ public class CubismCanvas extends Canvas {
 
     public CubismCanvas() {
 
-        this.setHeight(400);
-        this.setWidth(960);
+        this.setHeight(600);
+        this.setWidth(450);
         HTMLFlow flow = new HTMLFlow();
-        flow.setContents("<div id = \"example1\" >\n" +
-                "           <div class=\"axis\" >" +
-                "           </div >\n" +
-                "           <div class=\"horizon\" >\n" +
-                "               <span class=\"title\" > foo - bar </span >\n" +
-                "                <span class=\"value\" style = \"\" > 5.7 </span ></div >\n" +
-                "           <div class=\"rule\" >\n" +
-                "               <div class=\"line\" style = \"position: absolute; top: 0px; bottom: 0px; width: 1px; pointer-events: none; left: 417px; display: none; \" >\n" +
-                "           </div >\n" +
-                "           </div >\n" +
-                "        </div >");
-        flow.setSize("360px", "180px");
+        flow.setContents("<div id = \"cubism_chart\" >" +
+                "           <div class=\"axis\">" +
+                "           </div >" +
+                "           <div class=\"horizon\" >" +
+                "               <span class=\"title\" > foo - bar </span >" +
+                "               <span class=\"value\" style = \"\" > 5.7 </span >" +
+                "           </div >" +
+                "           <div class=\"rule\" >" +
+                "               <div class=\"line\" style = \"position: absolute; top: 0px; bottom: 0px; width: 1px; pointer-events: none; left: 417px; display: none; \" >" +
+                "               </div >" +
+                "           </div >" +
+                "         </div >");
+        //flow.setSize("360px", "180px");
         this.addChild(flow);
     }
 
-    public static native void drawCharts() /*-{
+    public static native void drawCharts(int serverDelay, int clientDelay, int valuePerMs, int size) /*-{
         var context =  $wnd.cubism.context()
-                .serverDelay(0)// allow seconds of collection lag
-                .clientDelay(0)
-                .step(1e3)// value per second
-                .size(960);
+                .serverDelay(serverDelay)// allow seconds of collection lag
+                .clientDelay(clientDelay)
+                .step(valuePerMs)// value per second
+                .size(size);
+
+//        $wnd.alert("server: " +serverDelay + "cleintDelay: " + clientDelay + "step: " + valuePerMs + "size: " + size);
 
         function random(name) {
             var value = 0,
@@ -55,7 +58,7 @@ public class CubismCanvas extends Canvas {
 
 
 
-        $wnd.d3.select("#example1").call(function (div) {
+        $wnd.d3.select("#cubism_chart").call(function (div) {
 
             div.append("div")
                     .attr("class", "axis")
@@ -73,7 +76,7 @@ public class CubismCanvas extends Canvas {
 
         });
 
-// On mousemove, reposition the chart values to match the rule.
+    // On mousemove, reposition the chart values to match the rule.
         context.on("focus", function (i) {
             $wnd.d3.selectAll(".value").style("right", i == null ? null : context.size() - i + "px");
         });
