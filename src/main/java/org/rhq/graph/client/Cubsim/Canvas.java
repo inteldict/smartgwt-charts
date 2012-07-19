@@ -1,29 +1,34 @@
-package org.rhq.graph.client;
+/*
+ * RHQ Management Platform
+ * Copyright (C) 2005-2008 Red Hat, Inc.
+ * All rights reserved.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation version 2 of the License.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+ */
+package org.rhq.graph.client.Cubsim;
 
-import com.smartgwt.client.widgets.Canvas;
 import com.smartgwt.client.widgets.HTMLFlow;
 
+/**
+ * @author Denis Krusko
+ */
+public class Canvas extends com.smartgwt.client.widgets.Canvas {
 
-public class CubismCanvas extends Canvas {
-
-    public CubismCanvas() {
-
-        this.setHeight(600);
-        this.setWidth(450);
+    public Canvas() {
         HTMLFlow flow = new HTMLFlow();
-        flow.setContents("<div id = \"cubism_chart\" >" +
-                "           <div class=\"axis\">" +
-                "           </div >" +
-                "           <div class=\"horizon\" >" +
-                "               <span class=\"title\" > foo - bar </span >" +
-                "               <span class=\"value\" style = \"\" > 5.7 </span >" +
-                "           </div >" +
-                "           <div class=\"rule\" >" +
-                "               <div class=\"line\" style = \"position: absolute; top: 0px; bottom: 0px; width: 1px; pointer-events: none; left: 417px; display: none; \" >" +
-                "               </div >" +
-                "           </div >" +
-                "         </div >");
-        //flow.setSize("360px", "180px");
+        flow.setContents("<div id = \"cubism_chart\" />");
+        flow.setWidth(900);
         this.addChild(flow);
     }
 
@@ -34,7 +39,7 @@ public class CubismCanvas extends Canvas {
                 .step(valuePerMs)// value per second
                 .size(size);
 
-//        $wnd.alert("server: " +serverDelay + "cleintDelay: " + clientDelay + "step: " + valuePerMs + "size: " + size);
+//        $wnd.alert("server: " +serverDelay + "clientDelay: " + clientDelay + "step: " + valuePerMs + "size: " + size);
 
         function random(name) {
             var value = 0,
@@ -56,8 +61,6 @@ public class CubismCanvas extends Canvas {
         var foo = random("foo"),
                 bar = random("bar");
 
-
-
         $wnd.d3.select("#cubism_chart").call(function (div) {
 
             div.append("div")
@@ -73,17 +76,13 @@ public class CubismCanvas extends Canvas {
             div.append("div")
                     .attr("class", "rule")
                     .call(context.rule());
-
         });
 
-    // On mousemove, reposition the chart values to match the rule.
+        // On mousemove, reposition the chart values to match the rule.
         context.on("focus", function (i) {
             $wnd.d3.selectAll(".value").style("right", i == null ? null : context.size() - i + "px");
         });
-
     }-*/;
 
 }
-
-
 

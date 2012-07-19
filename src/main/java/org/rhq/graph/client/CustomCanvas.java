@@ -2,8 +2,6 @@ package org.rhq.graph.client;
 
 import com.smartgwt.client.widgets.Canvas;
 import com.smartgwt.client.widgets.HTMLFlow;
-import com.smartgwt.client.widgets.form.fields.FormItem;
-import com.smartgwt.client.widgets.form.fields.TextItem;
 
 public class CustomCanvas extends Canvas
 {

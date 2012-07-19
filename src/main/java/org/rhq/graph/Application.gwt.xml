@@ -29,7 +29,6 @@
 
     <!-- Specify the application-specific style sheet. -->
     <stylesheet src='Application.css'/>
-    <!--<stylesheet src='cubism.v1.css'/>-->
-
+    <stylesheet src='cubism.v1.css'/>
 </module>
     
