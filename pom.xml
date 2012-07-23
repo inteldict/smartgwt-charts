@@ -96,7 +96,6 @@
                     <!--<noServer>true</noServer>-->
                     <!--<inplace>false</inplace>-->
                 </configuration>
-
             </plugin>
             <!--
                 If you want to use the target/web.xml file mergewebxml produces,

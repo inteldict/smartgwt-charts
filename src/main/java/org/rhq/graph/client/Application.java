@@ -20,9 +20,13 @@ package org.rhq.graph.client;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
+import com.smartgwt.client.util.SC;
+import com.smartgwt.client.widgets.Button;
+import com.smartgwt.client.widgets.events.ClickEvent;
+import com.smartgwt.client.widgets.events.ClickHandler;
 import com.smartgwt.client.widgets.layout.VStack;
 
-import org.rhq.graph.client.Cubsim.Canvas;
+import org.rhq.graph.client.cubsim.Canvas;
 
 public class Application implements EntryPoint {
     /**
@@ -40,10 +44,25 @@ public class Application implements EntryPoint {
         vStack.setWidth(1024);
         vStack.setHeight(1024);
         vStack.setMargin(10);
+        Button button = new Button("Test button");
+        button.addClickHandler(new ClickHandler()
+        {
+            @Override
+            public void onClick(ClickEvent clickEvent)
+            {
+                SC.say("hello");
+            }
+        });
+        vStack.addMember(button);
+
+
         Canvas canvas = new Canvas();
+        canvas.setWidth(400);
+        canvas.setHeight(160);
+
         vStack.addMember(canvas);
         vStack.draw();
-        canvas.drawCharts(0,0,1000, 900);
+        canvas.drawCharts();
     }
 }
 

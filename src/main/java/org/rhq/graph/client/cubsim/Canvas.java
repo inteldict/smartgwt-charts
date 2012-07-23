@@ -16,7 +16,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-package org.rhq.graph.client.Cubsim;
+package org.rhq.graph.client.cubsim;
 
 import com.smartgwt.client.widgets.HTMLFlow;
 
@@ -25,19 +25,48 @@ import com.smartgwt.client.widgets.HTMLFlow;
  */
 public class Canvas extends com.smartgwt.client.widgets.Canvas {
 
+    HTMLFlow flow = new HTMLFlow();
+
+    private int width;
+    private int height;
+    private int serverDelay = 0;
+    private int c = 0;
+    private int valuePerMs = 1000;
+
+
     public Canvas() {
-        HTMLFlow flow = new HTMLFlow();
         flow.setContents("<div id = \"cubism_chart\" />");
-        flow.setWidth(900);
         this.addChild(flow);
     }
 
-    public static native void drawCharts(int serverDelay, int clientDelay, int valuePerMs, int size) /*-{
+    public int getGraphWidth()
+    {
+        return width;
+    }
+
+    public void setWidth(int width)
+    {
+        this.width = width;
+        flow.setWidth(width);
+    }
+
+    public int getGraphHeight()
+    {
+        return height;
+    }
+
+    public void setHeight(int height)
+    {
+        this.height = height;
+        flow.setHeight(height);
+    }
+
+    public native void drawCharts() /*-{
         var context =  $wnd.cubism.context()
-                .serverDelay(serverDelay)// allow seconds of collection lag
-                .clientDelay(clientDelay)
-                .step(valuePerMs)// value per second
-                .size(size);
+                .serverDelay(this.@org.rhq.graph.client.cubsim.Canvas::serverDelay) // allow seconds of collection lag
+                .clientDelay(this.@org.rhq.graph.client.cubsim.Canvas::valuePerMs)
+                .step(this.@org.rhq.graph.client.cubsim.Canvas::valuePerMs) // value per second
+                .size(this.@org.rhq.graph.client.cubsim.Canvas::width);
 
 //        $wnd.alert("server: " +serverDelay + "clientDelay: " + clientDelay + "step: " + valuePerMs + "size: " + size);
 
@@ -82,6 +111,7 @@ public class Canvas extends com.smartgwt.client.widgets.Canvas {
         context.on("focus", function (i) {
             $wnd.d3.selectAll(".value").style("right", i == null ? null : context.size() - i + "px");
         });
+
     }-*/;
 
 }
